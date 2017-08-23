@@ -1,8 +1,11 @@
 # dicas de js
 
 
-### Tecnologias utilizadas
-> bootstrap 4
-> javascrip
-> HTML5
-> CSS 3
+### Tecnologias utilizadas finnadie
+
+> file_folder CDN bootstrap 4
+
+> file_folder javascrip
+> file_folder HTML5
+
+> file_folder CSS 3

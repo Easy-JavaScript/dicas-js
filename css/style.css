@@ -4,6 +4,9 @@
 .resul{
 	margin: 60px 0;
 }
+.loops,.jason{
+	padding: 60px 0;
+}
 .loop-while,.loop-for{
 	display: inline-block;
 }

@@ -89,3 +89,30 @@ function loopFor(){
 	}
 	document.getElementById('for').innerHTML = j;
 }
+
+var btnConsulta = document.getElementById('botao');
+
+btnConsulta.addEventListener('click', function(){
+	let cep = document.getElementById('cep').value;
+	//interpolação para deixar url dinamica
+	let api = `https://viacep.com.br/ws/${cep}/json/`;
+	let request = new XMLHttpRequest();
+	request.open('GET', api);
+	
+	request.onload = function(){
+		//convertendo formato json para objeto javascript
+		let endereco = JSON.parse(request.responseText);
+		
+		let logradouro = document.querySelector('#logradouro');
+		logradouro.innerHTML = endereco.logradouro;
+		
+		let bairro = document.querySelector('#bairro');
+		bairro.innerHTML = endereco.bairro;
+		
+		let local = document.querySelector('#localidade');
+		local.innerHTML = endereco.localidade;
+	}
+	request.send();
+
+	
+});
