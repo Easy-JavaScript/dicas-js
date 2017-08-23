@@ -1,4 +1,4 @@
-# dicas de js
+# Dicas de Implementações JavaScript.
 
 
 ### Tecnologias utilizadas :finnadie:
